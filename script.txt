@@ -32,3 +32,26 @@ docker exec --user root spark-master /opt/spark/bin/spark-submit --master local[
 --- connect tới cassandra trên termical ---
 docker exec -it cassandra cqlsh
 
+
+-- Cách thao tác với git --
+
+# để tạo 1 branch mới
+git checkout -b develop
+
+# Xem nhánh hiện tại
+git branch
+
+# Commit các thay đổi
+git add .
+git commit -m "Your commit message"
+
+# Push nhánh develop lên GitHub
+git push -u origin develop
+
+# Chuyển về nhánh main khi cần
+git checkout main
+
+# Merge develop vào main khi hoàn thành
+git checkout main
+git merge develop
+git push origin main
